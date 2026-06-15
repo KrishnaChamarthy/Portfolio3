@@ -35,6 +35,19 @@ export const sections = {
   },
 };
 
+export const notableMetrics = {
+  gate_cse: {
+    year: 2026,
+    all_india_rank: 118,
+    score: 879,
+  },
+  hackathons: ["Ranked Top 2 at HACKMIT 2025 (500+ participants)"],
+  competitive_programming: {
+    leetcode: "Knight (Top 3%, 2000+ rating)",
+    codeforces: "Expert (1600+ rating)",
+  },
+};
+
 export const terminalTokens = {
   openCommand: "./open",
   fileMode: "drwxr-xr-x",

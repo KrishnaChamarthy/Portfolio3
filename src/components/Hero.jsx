@@ -8,6 +8,7 @@ import {
 } from "../constants";
 import { useEffect, useState } from "react";
 import RatingCard from "./RatingCard";
+import portraitImage from "../assets/Portrait.png";
 
 const focusColors = ["text-code-blue", "text-code-purple", "text-code-green"];
 
@@ -33,7 +34,6 @@ const Hero = () => {
       .then((data) => {
         if (data.contestRating) {
           const rating = Math.round(data.contestRating);
-          // Simple logic to determine LeetCode badge based on rating
           let rank = "Student";
           if (rating >= 1600) rank = "Knight";
           if (rating >= 2150) rank = "Guardian";
@@ -45,8 +45,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="mx-auto grid min-h-[calc(100vh-88px)] max-w-6xl items-center gap-10 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1fr_18rem] lg:px-10">
-      <div className="max-w-4xl">
+    <section className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl items-center gap-10 px-5 pb-20 pt-10 sm:px-8 lg:grid-cols-[1fr_22rem] xl:grid-cols-[1fr_24rem] lg:px-10">
+      <div className="flex max-w-4xl flex-col justify-center py-6">
         <p className="mb-5 text-sm font-semibold text-moss">
           {hero.prompt}
           <span className="ml-2 inline-block h-5 w-3 translate-y-1 animate-cursor bg-moss" />
@@ -104,22 +104,27 @@ const Hero = () => {
           />
         </div>
 
-        <div className="mt-4 inline-flex items-center gap-2 rounded-md border border-ink/15 bg-white/75 px-4 py-3 text-sm font-semibold text-ink/80 shadow-sm">
+        <div className="mt-4 inline-flex w-fit items-center gap-2 rounded-md border border-ink/15 bg-white/75 px-4 py-3 text-sm font-semibold text-black shadow-sm">
           <MapPin size={16} className="text-black" />
           <span>{hero.location}</span>
         </div>
       </div>
 
-      <aside className="overflow-hidden rounded-lg border border-ink/10 bg-ink shadow-soft">
+      <aside className="mx-auto w-[85%] overflow-hidden rounded-lg border border-ink/10 bg-ink shadow-soft sm:w-[70%] md:w-[55%] lg:w-full">
         <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
           <span className="h-3 w-3 rounded-full bg-clay" />
           <span className="h-3 w-3 rounded-full bg-paper" />
           <span className="h-3 w-3 rounded-full bg-moss" />
           <p className="ml-2 text-xs text-white/55">{hero.portraitLabel}</p>
         </div>
-        <div className="flex aspect-[4/5] min-h-[320px] items-center justify-center p-6">
-          <div className="flex h-full w-full items-center justify-center rounded-lg border border-dashed border-paper/35 bg-paper/5 text-center text-sm leading-6 text-white/60">
-            {hero.portraitPlaceholder}
+
+        <div className="p-4">
+          <div className="overflow-hidden rounded-lg border border-white/10 bg-paper/5 leading-none">
+            <img
+              src={portraitImage}
+              alt="Krishna Chamarthy portrait"
+              className="block h-auto w-full"
+            />
           </div>
         </div>
       </aside>

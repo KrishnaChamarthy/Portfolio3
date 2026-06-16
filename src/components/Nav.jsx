@@ -1,9 +1,9 @@
-import { Terminal } from 'lucide-react'
-import { navTabs, site } from '../constants'
+import { Terminal } from "lucide-react";
+import { navTabs, site } from "../constants";
 
 function Nav() {
   return (
-    <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-6 sm:px-8 lg:px-10">
+    <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-6 sm:px-8 lg:px-10">
       <a className="flex items-center gap-2 text-sm font-semibold" href="/">
         <Terminal size={18} />
         {site.brand}
@@ -12,7 +12,7 @@ function Nav() {
         {navTabs.map((tab) => (
           <a
             className="rounded-md px-3 py-2 text-xs font-semibold text-ink/65 transition hover:bg-paper hover:text-ink"
-            href={`#${tab.split('.')[0]}`}
+            href={`#${tab.split(".")[0]}`}
             key={tab}
           >
             {tab}
@@ -20,7 +20,7 @@ function Nav() {
         ))}
       </div>
     </nav>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

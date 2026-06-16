@@ -139,21 +139,34 @@ export const projects = [
 ];
 
 export const skills = {
-  core: [
+  coreCompetencies: [
     "Distributed Systems",
-    "Linux",
-    "System Design",
+    "Machine Learning",
     "Information Retrieval",
+    "System Design",
+    "TCP/IP",
   ],
-  languages: ["C++", "Python", "Java", "C"],
-  frameworks_tools: ["PyTorch", "Kafka", "Docker", "Spring Boot"],
+  languages: ["C++", "Python", "Java", "C", "JavaScript", "SQL", "HTML/CSS"],
+  machineLearning: [
+    "Neural Networks",
+    "Embedding Models",
+    "LLMs",
+    "NLP",
+    "Statistical Modeling",
+    "Classification",
+  ],
+  frameworks: [
+    "PyTorch",
+    "Scikit-learn",
+    "Spring Boot",
+    "React",
+    "Node.js",
+    "Flask",
+    "gRPC",
+  ],
+  infrastructureAndTools: ["Docker", "Kafka", "AWS", "Azure", "Linux", "Git"],
+  databases: ["PostgreSQL", "MongoDB", "Azure Cosmos DB", "Snowflake"],
 };
-
-export const achievements = [
-  "Secured AIR 118 in GATE CSE, 2026.",
-  "LeetCode Knight (Top 3%) and Codeforces Specialist.",
-  "Ranked Top 2 at HACKMIT 2025.",
-];
 
 export const footer = {
   name: "Krishna Chamarthy",

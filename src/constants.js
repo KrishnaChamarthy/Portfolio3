@@ -19,7 +19,7 @@ export const sections = {
   },
   experience: {
     command: "./run_experience.sh",
-    title: "Experience",
+    title: "Experience & Education",
   },
   projects: {
     command: "ls -la /projects",
@@ -95,13 +95,40 @@ export const about = {
 
 export const experiences = [
   {
-    hash: "85c0ffee",
+    timeframe: "2024",
     role: "Software Engineer Intern",
     org: "Northern Trust Corporation",
-    commits: [
+    summary:
+      "Architected a real-time Kafka streaming pipeline and hardened the observability layer for high-throughput ingestion paths.",
+    highlights: [
       "Architected a real-time Kafka streaming pipeline handling 50,000 events/minute.",
       "Reduced processing latency by 85% across high-throughput ingestion paths.",
       "Deployed a data observability platform that reduced anomaly detection time by 70%.",
+    ],
+  },
+];
+
+export const educationTimeline = [
+  {
+    timeframe: "Current",
+    degree: "M.Tech in Computer Science and Engineering",
+    org: "IIT Kanpur",
+    summary:
+      "Incoming graduate student focused on systems, machine learning, and scalable software design.",
+    highlights: [
+      "Building a stronger foundation in distributed systems and machine learning.",
+      "Continuing to explore the intersection of high-performance software and intelligent data systems.",
+    ],
+  },
+  {
+    timeframe: "Undergraduate",
+    degree: "B.Tech in Computer Engineering",
+    org: "MIT World Peace University",
+    summary:
+      "Established the systems and software engineering base that now informs my work.",
+    highlights: [
+      "Developed a strong core in programming, systems, and applied computer science.",
+      "Used coursework and projects to move deeper into low-level engineering and production software.",
     ],
   },
 ];

@@ -77,6 +77,8 @@ const Hero = () => {
             <a
               className="group inline-flex items-center gap-2 rounded-md border border-ink/15 bg-white/75 px-4 py-3 text-sm font-semibold transition hover:border-moss hover:text-moss hover:shadow-sm"
               href={link.href}
+              target="_blank"
+              rel="noreferrer"
               key={link.label}
             >
               {terminalTokens.openCommand} {link.label.toLowerCase()}

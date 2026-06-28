@@ -88,7 +88,7 @@ export const links = [
 export const about = {
   school: "IIT Kanpur",
   undergraduateSchool: "MIT World Peace University",
-  cgpa: "8.77",
+  cgpa: "8.83",
   coursework: [
     "High Performance Computing",
     "Distributed and Cloud Computing",
